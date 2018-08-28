@@ -1,0 +1,3 @@
+1 imagen central
+2 imagen secundaria izquierda
+3 imagen secundaria derecha
