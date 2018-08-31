@@ -1,0 +1,36 @@
+/*animacion header*/
+@keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin: auto;
+  }
+}
+
+#paisaje:hover{
+  filter: drop-shadow(2px 2px 2px #82c3a9);
+  transform: rotate(10deg);
+}
+
+#retrato:hover{
+  filter: drop-shadow(2px 2px 2px #82c3a9);
+  transform: translate(20px,5px);
+}
+
+/*filtros*/
+#blur{
+  -webkit-filter: blur(10px);
+  filter:  blur(10px);
+}
+#grises{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#sepia{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}

@@ -1,3 +1,4 @@
+/*generales y hoja principal*/
 body{
   background-color: #02010a;
   font-family: Dancing Script;
@@ -12,10 +13,12 @@ body{
   border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px;
+  animation-name: slidein;
+  animation-duration: 4s;
 }
  h1{
-   p
    padding: 10px;
+   margin: 0;
  }
 .menu{
   text-align: right;
@@ -38,9 +41,6 @@ body{
   display:flex;
   flex-direction: column;
 }
-img{
-  filter: drop-shadow(2px 2px 2px black);
-}
 .central{
   background-color: #82c3a6;
   width: inherit;
@@ -48,6 +48,9 @@ img{
   margin: 0 auto;
   color: white;
   text-align: center;
+}
+.central img{
+  filter: drop-shadow(2px 2px 2px black);
 }
 .secundario{
   background-color: #d5c75f;
@@ -60,12 +63,13 @@ img{
   height: auto;
 }
 .img-sec img{
+  filter: drop-shadow(2px 2px 2px black);
   width: 80%;
   padding: 5px;
+  margin: 5px;
 }
 
 /* footer */
-
 #pie{
   background-color: #c6d5c5;
   width: inherit;
@@ -76,32 +80,31 @@ img{
   display: flex;
   align-content: space-around;
   flex-direction: row;
-  height: auto;
+  height: 200px;
 }
 
 .contenedor{
   width: 100%;
-  padding: 10px;
-  line-height: 12px;
+  padding: 0px;
+  margin: inherit;
+  line-height: 5px;
+  text-align: center;
   align-content: center;
   display: inherit;
 }
-
 #pie .contenedor > div{
   text-align: left;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 0px;
   width: 30%;
 }
-
 #pie img{
   width: 20px;
   height: auto;
   filter: none;
 }
 
-
-/*resposive*/
+/*resposive hoja principal*/
 @media (min-width:900px){
   #contenido{
     width: 900px;
@@ -141,6 +144,98 @@ img{
 
   #pie{
     width: 100%;
+  }
+  .contenedor{
+    width: 100%;
+    padding: 10px;
+    line-height: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  #pie .contenedor > div{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+  }
+}
+
+/*-----Hoja galerias-----*/
+#contenido1{
+  margin: 0 auto;
+  padding: 0px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+#cont_paisajes{
+  background-color: #d5c75f;
+  width: 100%;
+  padding: inherit;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.paisajes{
+  width: 33%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: inherit;
+  flex-flow: row;
+  vertical-align: middle;
+  text-align: center;
+}
+.paisajes img{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+
+/*resposive hojas galerias*/
+@media (min-width:900px){
+  #contenido1{
+    width: 900px;
+  }
+}
+
+@media (max-width:899px){
+  #contenido1{
+    width: 100%;
+  }
+  #cont_paisajes{
+    background-color: #d5c75f;
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    height: auto;
+    text-align: center;
+  }
+  .paisajes{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: inherit;
+    flex-flow: column;
+    text-align: center;
+  }
+  .paisajes img{
+    width: 80%;
+    padding: 0px;
+    text-align: center;
+  }
+
+  #pie{
+    width: 100%;
+    height: auto;
   }
   .contenedor{
     width: 100%;
