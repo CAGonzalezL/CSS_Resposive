@@ -72,31 +72,32 @@ body{
 /* footer */
 #pie{
   background-color: #c6d5c5;
-  width: inherit;
+  width: 100%;
   margin: 0 auto;
   border-radius: 0px 0px 10px 10px;
   -moz-border-radius: 0px 0px 10px 10px;
   -webkit-border-radius: 0px 0px 10px 10px;
   display: flex;
-  align-content: space-around;
   flex-direction: row;
-  height: 200px;
+  justify-content: center;
+  height: auto;
 }
 
 .contenedor{
   width: 100%;
-  padding: 0px;
-  margin: inherit;
+  padding: 10px;
+  margin: auto;
   line-height: 5px;
   text-align: center;
-  align-content: center;
+  justify-content: center;
   display: inherit;
 }
 #pie .contenedor > div{
+  font-size: 1em;
   text-align: left;
   padding: 5px;
-  margin: 0px;
-  width: 30%;
+  margin: 0 auto;
+  width: 100%;
 }
 #pie img{
   width: 20px;
@@ -146,19 +147,22 @@ body{
     width: 100%;
   }
   .contenedor{
-    width: 100%;
-    padding: 10px;
+    width: inherit;
+    padding: inherit;
+    margin: auto;
     line-height: 12px;
-    text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     height: auto;
   }
   #pie .contenedor > div{
+    width: 80%;
+    height: auto;
     text-align: left;
-    padding: 10px;
-    margin: 10px;
-    width: 100%;
+    padding: auto;
+    margin: auto;
+
   }
 }
 
@@ -173,20 +177,21 @@ body{
 #cont_paisajes{
   background-color: #d5c75f;
   width: 100%;
-  padding: inherit;
+  min-height: 400px;
+  padding: 0;
   margin: 0 auto;
+  align-items: center;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
 }
 .paisajes{
-  width: 33%;
+  width: 33.3%;
   height: auto;
   padding: 0px;
   margin: 0px;
   display: inherit;
   flex-flow: row;
-  vertical-align: middle;
   text-align: center;
 }
 .paisajes img{
@@ -231,25 +236,5 @@ body{
     width: 80%;
     padding: 0px;
     text-align: center;
-  }
-
-  #pie{
-    width: 100%;
-    height: auto;
-  }
-  .contenedor{
-    width: 100%;
-    padding: 10px;
-    line-height: 12px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  #pie .contenedor > div{
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    width: 100%;
   }
 }
